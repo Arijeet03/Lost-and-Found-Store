@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: 'Times New Roman', Times, serif;
   align-items: center;
+  
 }
 body{
     height: 100vh;
@@ -11,8 +12,9 @@ body{
     justify-content: center;
     align-items: center;
     letter-spacing: 1px;
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(Pictures/93190.jpg);
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(Pictures/Back.jpeg);
     background-size: cover;
+    backdrop-filter:  blur(5px);
 }
 .login_form_container{
     position: relative;
@@ -70,7 +72,7 @@ body{
     padding: 50px 40px;
     z-index: 10;
     color: #00ccff;
-
+    
 } 
 h2{
     font-size: 40px;
@@ -94,7 +96,11 @@ h2{
     font-size: 20px;
     padding-left: 10px;
     color: #00ccff;
-
+    transition: 1s;
+}
+.input_text:hover{
+    color: #ee00ff;
+    cursor: pointer;
 }
 ::placeholder{
     font-size: 15px;
@@ -112,8 +118,6 @@ h2{
     height: 40px;
     transition: 1s;
     margin-top: 70px;
-
-
 }
 #login_button a{
     position: absolute;
@@ -124,12 +128,17 @@ h2{
     cursor: pointer;
     font-size: 22px;
     letter-spacing: 2px;
-    border: 1px solid blue;
+    border: 1px solid #ee00ff;
     border-radius: 50px;
     background-color: #0c1022;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#login_button:hover
+{
+	color: #ee00ff;
+	cursor: pointer;
 }
 .fotter {
     margin-top: 30px;
@@ -142,8 +151,13 @@ h2{
     color: #00ccff;
     cursor: pointer;
     font-size: 18px;
+    transition: 1s;
 }
 
+.fotter a:hover{
+    color: #ee00ff;
+    cursor: pointer;
+}
 #external_links a{
 text-shadow: #00ccff;
 }
