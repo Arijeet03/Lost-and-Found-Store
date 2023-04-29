@@ -39,7 +39,7 @@ body{
     content: '';
     background: transparent;
 
-    background-image: conic-gradient(transparent, transparent, transparent, #ee00ff);
+    background-image: conic-gradient(transparent, transparent, transparent, #ff5353);
     animation: rotate_border 6s linear infinite;
 
 }
@@ -51,7 +51,7 @@ body{
     content: '';
     background: transparent;
 
-    background-image: conic-gradient(transparent, transparent, transparent, #00ccff);
+    background-image: conic-gradient(transparent, transparent, transparent, #328bf6);
     animation: rotate_border 6s linear infinite;
     animation-delay: -3s;
 }
@@ -71,7 +71,7 @@ body{
     inset: 5px;
     padding: 50px 40px;
     z-index: 10;
-    color: #00ccff;
+    color: #328bf6;
     
 } 
 h2{
@@ -92,19 +92,19 @@ h2{
     background: transparent;
     border: none;
     outline: none;
-    border-bottom: 1px solid #00ccff;
+    border-bottom: 1px solid #328bf6;
     font-size: 20px;
     padding-left: 10px;
-    color: #00ccff;
+    color: #328bf6;
     transition: 1s;
 }
 .input_text:hover{
-    color: #ee00ff;
+    color: #ff5353;
     cursor: pointer;
 }
 ::placeholder{
     font-size: 15px;
-    color: #00ccff52;
+    color: #328bf652;
     letter-spacing: 1px;
 
 }
@@ -128,7 +128,7 @@ h2{
     cursor: pointer;
     font-size: 22px;
     letter-spacing: 2px;
-    border: 1px solid #ee00ff;
+    border: 1px solid #ff5353;
     border-radius: 50px;
     background-color: #0c1022;
     display: flex;
@@ -137,7 +137,7 @@ h2{
 }
 #login_button:hover
 {
-	color: #ee00ff;
+	color: #ff5353;
 	cursor: pointer;
 }
 .fotter {
@@ -147,22 +147,22 @@ h2{
 
 }
 .fotter a{
-    text-decoration: 1px solid #00ccff;
-    color: #00ccff;
+    text-decoration: 1px solid #328bf6;
+    color: #328bf6;
     cursor: pointer;
     font-size: 18px;
     transition: 1s;
 }
 
 .fotter a:hover{
-    color: #ee00ff;
+    color: #ff5353;
     cursor: pointer;
 }
 #external_links a{
-text-shadow: #00ccff;
+text-shadow: #328bf6;
 }
 .glowIcon {
-    text-shadow: 0 0 10px #00ccff;
-    color: #00ccff;
+    text-shadow: 0 0 10px #328bf6;
+    color: #328bf6;
 
 }
