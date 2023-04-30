@@ -1,6 +1,213 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+    
+  }
+  body{
+      height: 120vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      letter-spacing: 1px;
+      background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(Pictures/Back.jpeg);
+      background-size: cover;
+      backdrop-filter:  blur(5px);
+  }
+  .signup_form_container{
+      position: relative;
+      background: transparent;
+      width: 400px;
+      height: 710px;
+      max-width: 400px;
+      max-height: 710px;
+      background: #040717;
+      border-radius: 50px 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      margin-top: 70px;
+      margin-bottom: 70px;
+  }
+  .signup_form_container::before{
+      
+      position: absolute;
+      width: 170%;
+      height: 170%;
+      content: '';
+      background: transparent;
+  
+      background-image: conic-gradient(transparent, transparent, transparent, #ff5353);
+      animation: rotate_border 6s linear infinite;
+  
+  }
+  .signup_form_container::after{
+      
+      position: absolute;
+      width: 170%;
+      height: 170%;
+      content: '';
+      background: transparent;
+  
+      background-image: conic-gradient(transparent, transparent, transparent, #328bf6);
+      animation: rotate_border 6s linear infinite;
+      animation-delay: -3s;
+  }
+  @keyframes rotate_border{
+      0%{
+          transform: rotate(0deg);
+      }
+      100%{
+          transform: rotate(360deg);
+      }
+  }
+  .signup_form{
+      position: absolute;
+      content: '';
+      background-color: #0c1022;
+      border-radius: 50px 5px;
+      inset: 5px;
+      padding: 50px 40px;
+      z-index: 10;
+      color: #328bf6;
+      
+  } 
+  h2{
+      font-size: 40px;
+      font-weight: 600;
+      text-align: center;
+  }
+  .input_group{
+      margin-top: 40px;
+      position:relative;
+      display:flex;
+      align-items: center;
+      justify-content: start;
+  }
+  .input_text{
+      width: 95%;
+      height: 30px;
+      background: transparent;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid #328bf6;
+      font-size: 20px;
+      padding-left: 10px;
+      color: #328bf6;
+      transition: 1s;
+  }
+  .input_text:hover{
+      color: #ff5353;
+      cursor: pointer;
+      border-bottom: 1px solid #ff5353;
+  }
+  ::placeholder{
+      font-size: 15px;
+      color: #328bf652;
+      letter-spacing: 1px;
+      transition: 1s;
+  }
+  input:hover::placeholder {
+    color: #ff5353;
+  }
+  .fa{
+      font-size: 20px;
+  }
+  .input_group:hover .fa{
+    color: #ff5353;
+    transition: 1s;
+  }
+  option {
+  color: #328bf6;
+  }
+  select:focus {
+    color: #328bf6;
+    background-color: #0d1023;
+    cursor: pointer;
+  }
+  #signup_button{
+      position: relative;
+      width: 300px;
+      height: 40px;
+      transition: 1s;
+      margin-top: 70px;
+  }
+  #signup_button a{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      z-index: 10;
+      cursor: pointer;
+      font-size: 22px;
+      letter-spacing: 2px;
+      border: 1px solid #ff5353;
+      border-radius: 50px;
+      background-color: #0c1022;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  #signup_button:hover
+  {
+      color: #ff5353;
+      cursor: pointer;
+  }
+  .fotter {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+  
+  }
+  .fotter a{
+      text-decoration: 1px solid #328bf6;
+      color: #328bf6;
+      cursor: pointer;
+      font-size: 18px;
+      transition: 1s;
+  }
+  
+  .fotter a:hover{
+      color: #ff5353;
+      cursor: pointer;
+  }
+  #external_links a{
+  text-shadow: #328bf6;
+  }
+  .glowIcon {
+      text-shadow: 0 0 10px #328bf6;
+      color: #328bf6;
+  
+  }
+  .alert-box {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid #040717;
+    background-color: #0d1023;
+    color: #328bf6;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  
+  .alert-box.show {
+    opacity: 1;
+  }
+  
+
+
+
+/* *{
+    margin: 0;
+    padding: 0;
     font-family: 'Times New Roman', Times, serif;
     box-sizing: border-box;
     align-items: center;
@@ -65,4 +272,4 @@ color: white;
 ::placeholder
 {
     color: white;
-}
+} */
