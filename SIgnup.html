@@ -1,32 +1,76 @@
-
-
-<!DOCTYPE HTML>
-
-<HTML>
-    <HEAD>
-        <TITLE>Signup_Lost-and-Found</TITLE>
-        <link rel="stylesheet" type="text/css" href="signup.css">
-    </HEAD>
-    <body>
-        <form>
-            <h1>SignUp</h1>
-            <input type="text" name="member_type" list="tech" placeholder="Member Type">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup_LOST_AND_FOUND</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="signup.css" />
+  </head>
+  <body>
+    <form>
+    <div class="signup_form_container">
+      <div class="signup_form">
+        <h2>Sign Up</h2>
+        <!-- <div class="input_group">
+            <i class="fa fa-user"></i>
+        <input type="text" name="member_type" list="tech" placeholder="Member Type" class="input_text">
             <datalist id="tech">
                 <option>FACULTY</option>
                 <option>STUDENT</option>
                 <option>NON-TEACHING STAFF</option>
                 <option>ADMIN</option>
             </datalist>
-            <input type="text" name="Username" placeholder="Username">
-            <input type="numeric" name="rollno" placeholder="Roll Number">
-            <input type="email" name="email" placeholder="Thapar Email">
-            <input type="password" name="password" placeholder="Password">
-            <input type="password" name="repass" placeholder="Retype Password">
-            <button type="submit">SignUp</button>
-        </form>
-        <script src="SIgnup.php"></script>
-    </body>
-</HTML>
+            </div> -->
+        <div class="input_group">
+            <i class="fa fa-user"></i>
+                <select name="member_type" class="input_text">
+                  <option value="" selected disabled>Member Type</option>
+                  <option value="faculty">FACULTY</option>
+                  <option value="student">STUDENT</option>
+                  <option value="non-teaching-staff">NON-TEACHING STAFF</option>
+                  <option value="admin">ADMIN</option>
+                </select>
+        </div>
+                
+        <div class="input_group">
+          <i class="fa fa-user"></i>
+          <input type="text" placeholder="Username" class="input_text" autocomplete="off" />
+        </div>
+
+        <div class="input_group">
+            <i class="fa fa-user"></i>
+        <input type="numeric" name="rollno" placeholder="Roll Number" class="input_text">
+        </div>
+        <div class="input_group">
+            <i class="fa fa-envelope"></i>
+        <input type="email" name="email" placeholder="Email abc@thapar.edu" class="input_text">
+        </div>
+
+        <div class="input_group">
+        <i class="fa fa-unlock-alt"></i>
+          <input type="password" placeholder="Password" class="input_text" autocomplete="off" />
+        </div>
+        <div class="input_group">
+        <i class="fa fa-unlock-alt"></i>
+          <input type="password" placeholder="Retype Password" class="input_text" autocomplete="off" />
+        </div>
+        <div class="button_group" id="signup_button">
+          <a>Submit</a>
+        </div>
+        <div class="fotter" id="external_links">
+          <a></a>
+          <a href="login.html">Login <i class="fa fa-sign-in"></i> </a>
+        </div>
+      </div>
+    </div>
+</form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- <script src="signup.php"></script> -->
+    <script src="signup.js"></script>
+  </body>
+</html>
 
 
 
