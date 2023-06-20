@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
     align-items: center;
-    
+
   }
   body{
       height: 120vh;
@@ -12,7 +12,7 @@
       justify-content: center;
       align-items: center;
       letter-spacing: 1px;
-      background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(Pictures/Back.jpeg);
+      background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(assets/93190.jpg);
       background-size: cover;
       backdrop-filter:  blur(5px);
   }
@@ -33,25 +33,25 @@
       margin-bottom: 70px;
   }
   .signup_form_container::before{
-      
+
       position: absolute;
       width: 170%;
       height: 170%;
       content: '';
       background: transparent;
-  
+
       background-image: conic-gradient(transparent, transparent, transparent, #ff5353);
       animation: rotate_border 6s linear infinite;
-  
+
   }
   .signup_form_container::after{
-      
+
       position: absolute;
       width: 170%;
       height: 170%;
       content: '';
       background: transparent;
-  
+
       background-image: conic-gradient(transparent, transparent, transparent, #328bf6);
       animation: rotate_border 6s linear infinite;
       animation-delay: -3s;
@@ -73,7 +73,7 @@
       padding: 50px 40px;
       z-index: 10;
       color: #328bf6;
-      
+
   } 
   h2{
       font-size: 40px;
@@ -160,7 +160,7 @@
       margin-top: 30px;
       display: flex;
       justify-content: space-between;
-  
+
   }
   .fotter a{
       text-decoration: 1px solid #328bf6;
@@ -169,7 +169,7 @@
       font-size: 18px;
       transition: 1s;
   }
-  
+
   .fotter a:hover{
       color: #ff5353;
       cursor: pointer;
@@ -180,7 +180,7 @@
   .glowIcon {
       text-shadow: 0 0 10px #328bf6;
       color: #328bf6;
-  
+
   }
   .alert-box {
     position: fixed;
@@ -196,12 +196,12 @@
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
   }
-  
-  
+
+
   .alert-box.show {
     opacity: 1;
   }
-  
+
 
 
 
@@ -209,67 +209,9 @@
     margin: 0;
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
-    box-sizing: border-box;
-    align-items: center;
-}
-body
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(Pictures/93190.jpg);
-    background-size: cover;
-}
-
-form
-{
-    text-align: center;
-    position: relative;
-    background: transparent;
-    backdrop-filter: blur(5px);
-    border: 0.5px solid white;
-    border-radius: 20px;
-    height: auto;
-    width: auto;
-    border-radius: 25                                           px;
-
-}
-input
-{
-    display: block;
-    width: 350px;
-    height: 40px;
-    margin: 20px;
-    outline: none;
-    font-size: 20px;
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid ivory;
-    color: white;
-}
-button
-{
-    width: 350px;
-    height: 40px;
-    font-size: 20px;
-    background-color: blue;
-    border: none;
-    color: white;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 20px;
-}
-
-form h1
-{
-margin-top: 20px;
-margin-bottom: 20px;
-color: white;
-}
-
+@@ -65,4 +272,4 @@ color: white;
 ::placeholder
 {
     color: white;
+}
 } */

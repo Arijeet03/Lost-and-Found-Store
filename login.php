@@ -1,3 +1,10 @@
+<?php
+session_start();
+include('includes/header.php');
+include('configure/database.php')
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,27 +17,28 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
-    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="css/login.css" />
   </head>
   <body>
-    <form>
+    <form action="POST">
     <div class="login_form_container">
-      <div class="login_form">
+        <?php include('messsage.php'); ?>
+      <div class="login_form" Method="POST">
         <h2>Login</h2>
         <div class="input_group">
           <i class="fa fa-user"></i>
-          <input type="text" placeholder="Username" class="input_text" autocomplete="off" />
+          <input type="text" name="user" placeholder="Username" name="login" class="input_text" autocomplete="off" />
         </div>
         <div class="input_group">
         <i class="fa fa-unlock-alt"></i>
-          <input type="password" placeholder="Password" class="input_text" autocomplete="off" />
+          <input type="password" name="pass"  placeholder="Password" name="pass" class="input_text" autocomplete="off" />
         </div>
         <div class="button_group" id="login_button">
-          <a href="index.php">Submit</a>
+          <button type="submit" name="login_button" class="btn btn-primary btn-block">Submit</a>
         </div>
         <div class="fotter" id="external_links">
           <a>Forgot Password ?</a>
-          <a href="Signup.html">SignUp <i class="fa fa-sign-in"></i> </a>
+          <a href="register.php">SignUp <i class="fa fa-sign-in"></i> </a>
         </div>
       </div>
     </div>
@@ -39,3 +47,7 @@
     <script src="login.js"></script>
   </body>
 </html>
+
+<?php
+include('includes/script.php');
+?>
